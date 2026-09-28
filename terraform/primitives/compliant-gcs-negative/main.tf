@@ -1,5 +1,5 @@
 # Step 7: The negative test
-# 
+#
 terraform {
   required_version = ">= 1.6"
   required_providers {
@@ -19,7 +19,7 @@ module "data_bucket" {
   project_label      = "cgep-lab"
   environment        = "prod"
   retention_days     = 30   # FAILS: prod requires >= 365
-  bucket_name_suffix = "should-never-exist"}
+  bucket_name_suffix = "should-never-exist"
 }
 
 output "attestation" { value = module.data_bucket.compliance_attestation }
