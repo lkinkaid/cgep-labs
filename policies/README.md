@@ -1,29 +1,67 @@
-# policies/sc28_encryption.rego
-# METADATA
-# title: SC-28 - Encryption at Rest (GCS)
-# description: "Every google_storage_bucket must encrypt at rest with a customer-managed encryption key (CMEK)."
-# custom:
-#   control_id: SC-28
-#   framework: nist-800-53
-#   severity: high
-#   remediation: "Add an encryption { default_kms_key_name = ... } block referencing a google_kms_crypto_key you control."
+# Compliance Policies
 
-# policies/ac3_no_public.rego
-# METADATA
-# title: AC-3 - Access Enforcement (no public GCS or open firewall)
-# description: "GCS buckets must enforce uniform_bucket_level_access AND public_access_prevention=enforced. Firewall rules must not allow 0.0.0.0/0 on management ports (22, 3389)."
-# custom:
-#   control_id: AC-3
-#   framework: nist-800-53
-#   severity: critical
-#   remediation: "Set uniform_bucket_level_access = true, public_access_prevention = enforced. For firewalls, narrow source_ranges or remove the rule."
+This directory contains Rego policies used to evaluate infrastructure-as-code against compliance requirements.
 
-# policies/cm6_required_tags.rego
-# METADATA
-# title: CM-6 - Configuration Settings (required compliance labels)
-# description: "Every taggable resource must carry the four required labels: project, environment, managed_by, compliance_scope."
-# custom:
-#   control_id: CM-6
-#   framework: nist-800-53
-#   severity: medium
-#   remediation: "Add the four required labels (project, environment, managed_by, compliance_scope) to the resource."
+## GCP Policies
+
+### SC-28 — Protection of Information at Rest
+
+**File:** `sc28_encryption.rego`  
+**Cloud:** GCP  
+**Severity:** High
+
+Verifies that Google Cloud Storage buckets are configured with customer-managed encryption keys (CMEK).
+
+**Remediation:** Configure the bucket to use a Cloud KMS key for encryption at rest.
+
+### AC-3 — Access Enforcement
+
+**File:** `ac3_no_public.rego`  
+**Cloud:** GCP  
+**Severity:** High
+
+Verifies that Google Cloud resources do not permit unauthorized public access.
+
+**Remediation:** Remove public access and restrict access to authorized identities and networks.
+
+### CM-6 — Configuration Settings
+
+**File:** `cm6_required_tags.rego`  
+**Cloud:** GCP  
+**Severity:** Medium
+
+Verifies that required labels are present on Google Cloud resources.
+
+**Remediation:** Add the required labels to the resource configuration.
+
+## AWS Policies
+
+### SC-28 — Protection of Information at Rest
+
+**File:** `sc28_encryption_aws.rego`  
+**Cloud:** AWS  
+**Severity:** High
+
+Verifies that Amazon S3 buckets have server-side encryption configured.
+
+**Remediation:** Configure server-side encryption for the S3 bucket.
+
+### AC-3 — Access Enforcement
+
+**File:** `ac3_no_public_aws.rego`  
+**Cloud:** AWS  
+**Severity:** High
+
+Verifies that Amazon S3 buckets have public access protections configured.
+
+**Remediation:** Configure S3 public access blocking to prevent unauthorized public access.
+
+### CM-6 — Configuration Settings
+
+**File:** `cm6_required_tags_aws.rego`  
+**Cloud:** AWS  
+**Severity:** Medium
+
+Verifies that required tags are present on AWS resources.
+
+**Remediation:** Add the required tags to the resource configuration.
