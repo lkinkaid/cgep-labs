@@ -1,0 +1,6 @@
+---
+# Lab 4.3 intentionally retains the Lab 2.3 S3 encryption configuration.
+# AES256 server-side encryption is enabled, but this lab does not require
+# a customer-managed KMS key.
+exclude:
+  - aws-s3-encryption-customer-key
