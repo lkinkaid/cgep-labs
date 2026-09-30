@@ -42,3 +42,13 @@ After initialization completed, Security Hub began evaluating controls and
 producing machine-readable findings. Findings were exported to:
 
 `evidence/lab-5-2/security-hub-findings.json`
+
+## Evidence
+
+Security Hub findings were exported as machine-readable JSON to:
+
+`evidence/lab-5-2/security-hub-findings.json`
+
+The evidence contains Security Hub control findings, including severity,
+control status, affected resources, and remediation information generated
+from the deployed AWS environment.
