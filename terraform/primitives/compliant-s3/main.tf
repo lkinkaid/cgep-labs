@@ -1,5 +1,5 @@
 # Step 2: Write the base bucket and tags
-# terraform/primitives/compliant-s3/main.tf
+# terraform/primitives/compliant-s3/main.tf 
 terraform {
   required_version = ">= 1.6"
   required_providers {
@@ -72,7 +72,7 @@ resource "aws_s3_bucket_versioning" "primary" {
 # AC-3: Access control, explicit deny on every public access vector.
 resource "aws_s3_bucket_public_access_block" "primary" {
   bucket                  = aws_s3_bucket.primary.id
-  block_public_acls       = false
+  block_public_acls       = true
   block_public_policy     = true
   ignore_public_acls      = true
   restrict_public_buckets = true
