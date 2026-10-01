@@ -50,7 +50,7 @@
                 "links": [
                   {
                     "rel": "evidence",
-                    "href": "s3://EVIDENCE_VAULT/runs/LATEST/evidence-LATEST.tar.gz",
+                    "href": "s3://cgep-lab-grc-evidence-vault-dfc65384/runs/36650932860/evidence-36650932860-3be40ede9fc111691f66ef9549cc85a9581a15b1.tar.gz",
                     "text": "Signed pipeline bundle containing terraform plan.json."
                   }
                 ]
@@ -72,7 +72,7 @@
                 "links": [
                   {
                     "rel": "evidence",
-                    "href": "s3://EVIDENCE_VAULT/runs/LATEST/evidence-LATEST.tar.gz",
+                    "href": "s3://cgep-lab-grc-evidence-vault-dfc65384/runs/36650932860/evidence-36650932860-3be40ede9fc111691f66ef9549cc85a9581a15b1.tar.gz",
                     "text": "Signed pipeline bundle containing terraform plan.json."
                   }
                 ]
@@ -94,7 +94,7 @@
                 "links": [
                   {
                     "rel": "evidence",
-                    "href": "s3://EVIDENCE_VAULT/runs/LATEST/evidence-LATEST.tar.gz",
+                    "href": "s3://cgep-lab-grc-evidence-vault-dfc65384/runs/36650932860/evidence-36650932860-3be40ede9fc111691f66ef9549cc85a9581a15b1.tar.gz",
                     "text": "Signed pipeline bundle containing terraform plan.json."
                   }
                 ]
@@ -109,14 +109,14 @@
                     "value": "implemented"
                   },
                   {
-                    "name": "terraform-resource",
+                    "name": "terraform-enforcement-point",
                     "value": "provider.aws.default_tags"
                   }
                 ],
                 "links": [
                   {
                     "rel": "evidence",
-                    "href": "s3://EVIDENCE_VAULT/runs/LATEST/evidence-LATEST.tar.gz",
+                    "href": "s3://cgep-lab-grc-evidence-vault-dfc65384/runs/36650932860/evidence-36650932860-3be40ede9fc111691f66ef9549cc85a9581a15b1.tar.gz",
                     "text": "Signed pipeline bundle containing terraform plan.json."
                   }
                 ]
