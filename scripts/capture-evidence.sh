@@ -1,6 +1,5 @@
-#Step 2: Write capture-evidence.sh
-
 #!/usr/bin/env bash
+# Step 2: Write capture-evidence.sh
 # scripts/capture-evidence.sh
 # Usage:
 #   capture-evidence.sh --workspace <path> --run-id <id> --vault <bucket> [--profile <p>]

@@ -18,7 +18,7 @@ Verifies that Google Cloud Storage buckets are configured with customer-managed 
 
 **File:** `ac3_no_public.rego`  
 **Cloud:** GCP  
-**Severity:** High
+**Severity:** Critical
 
 Verifies that Google Cloud resources do not permit unauthorized public access.
 
@@ -50,7 +50,7 @@ Verifies that Amazon S3 buckets have server-side encryption configured.
 
 **File:** `ac3_no_public_aws.rego`  
 **Cloud:** AWS  
-**Severity:** High
+**Severity:** Critical
 
 Verifies that Amazon S3 buckets have public access protections configured.
 
