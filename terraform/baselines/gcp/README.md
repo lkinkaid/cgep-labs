@@ -26,7 +26,7 @@ The following components were created and validated during the lab:
   - `iam.googleapis.com`
 - GitHub Actions WIF demo workflow using OIDC instead of a service-account JSON key
 
-The environment was subsequently destroyed after testing.
+The Terraform-managed resources created during testing were later destroyed.
 
 ## Organization Policy Blocker
 
