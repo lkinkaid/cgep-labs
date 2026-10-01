@@ -11,7 +11,7 @@ This directory contains OSCAL artifacts describing the compliance controls imple
 - AU-3 — Content of Audit Records
 - CM-6 — Configuration Settings
 
-Each implemented requirement references the Terraform configuration that enforces the control and links to the signed evidence-bundle pattern established in Labs 4.3 and 4.4.
+Each implemented requirement references the Terraform configuration that enforces the control and links to the historical signed evidence bundle produced by Labs 4.3 and 4.4.
 
 The original Lab 4.4 evidence vault was destroyed after the configured retention period expired, so the evidence URI in the component definition documents the intended evidence relationship but is not currently resolvable to a live object.
 
